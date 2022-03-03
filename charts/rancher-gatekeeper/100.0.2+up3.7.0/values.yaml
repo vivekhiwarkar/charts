@@ -1,0 +1,19 @@
+# Default values for rancher-gatekeeper-crd.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+global:
+  cattle:
+    systemDefaultRegistry: ""
+  kubectl:
+    repository: rancher/kubectl
+    tag: v1.20.2
+auditInterval: 300
+
+images:
+  gatekeeper:
+    repository: rancher/mirrored-openpolicyagent-gatekeeper
+    tag: v3.6.0
+  gatekeepercrd:
+    repository: rancher/mirrored-openpolicyagent-gatekeeper-crds
+    tag: v3.6.0
