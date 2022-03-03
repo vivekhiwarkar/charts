@@ -1,8 +1,3 @@
-apiVersion: v1
-version: 3.7.0
-description: Modifies Open Policy Agent's upstream gatekeeper chart that provides policy-based control for cloud native environments
-name: rancher-gatekeeper
-type: application
 annotations:
   catalog.cattle.io/auto-install: rancher-gatekeeper-crd=match
   catalog.cattle.io/certified: rancher
@@ -13,4 +8,10 @@ annotations:
   catalog.cattle.io/release-name: rancher-gatekeeper
   catalog.cattle.io/type: cluster-tool
   catalog.cattle.io/ui-component: gatekeeper
+apiVersion: v1
+description: Modifies Open Policy Agent's upstream gatekeeper chart that provides
+  policy-based control for cloud native environments
 icon: https://charts.rancher.io/assets/logos/gatekeeper.svg
+name: rancher-gatekeeper
+type: application
+version: 100.0.2+up3.7.0
