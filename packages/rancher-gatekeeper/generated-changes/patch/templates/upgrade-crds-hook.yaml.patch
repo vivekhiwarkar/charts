@@ -1,7 +1,7 @@
 --- charts-original/templates/upgrade-crds-hook.yaml
 +++ charts/templates/upgrade-crds-hook.yaml
-@@ -72,8 +72,8 @@
-       restartPolicy: Never
+@@ -81,8 +81,8 @@
+       {{- end }}
        containers:
        - name: crds-upgrade
 -        image: '{{ .Values.image.crdRepository }}:{{ .Values.image.release }}'
